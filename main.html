@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+<meta http-equiv="x-ua-compatible" content="ie=9">
+
+<title>App Title (Change this to reflect your App) | SnapBack Apps</title>
+	
+<!--TEMPLATE STYLE SHEETS --> 
+<link rel ="stylesheet" type="text/css" href="standard-style.css" title="standard-style" />
+<link rel ="stylesheet" type="text/css" href="custom-style.css" title="custom-style" />
+
+<!--APP EXTERNAL JAVASCRIPT FILES -->
+<script type="text/javascript" src="sample-lib.js"></script>
+<!--Add Any of Your Javascript Files Here -->  
+    
+<!-- SCRIPTS FOR TABS --> 
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="tabs.js"></script> 
+
+</head>
+<base target="contents">
+<script language="vbscript">
+</script>
+
+<script language="jscript">
+var shell = new ActiveXObject("WScript.Shell")
+function EditMe(){
+   shell.Run("notepad.exe C:\\Users\\Administrator\\Documents\\GitHub\\MyTestApp\\main.html")
+}
+function GoCMD(){
+   shell.Run("cmd.exe")
+}
+function GoEVR(){
+   shell.Run("eventvwr.exe")
+}
+function GoCMG(){
+   shell.Run("compmgmt.msc")
+}
+function GoCMP(){
+strCommand = 
+   shell.Run('"C:\\Program Files (x86)\\TeamViewer\\Version9\\TeamViewer.exe"')
+}
+function GoTRB(){
+   shell.Run("CONTROL.EXE")
+}
+function GoPWS(){
+   shell.Run("powershell_ise")
+}
+
+function GoWMP(){
+   shell.Run("wmplayer")
+}
+</script>
+
+<STYLE>
+.btn {
+   text:black;
+   background:lightblue;
+   width:150px;
+   padding-bottom:5px;
+}
+</STYLE>
+<body>
+<div id="page">
+	<ul class="tabs">
+		<li><a href="#tab1">Overview</a></li>
+		<li><a href="#tab2">Technical Details</a></li>
+		<li><a href="#tab3">FAQ</a></li>
+		<li><a href="#tab4">Terms of Use</a></li>
+	</ul>
+				
+	<div id="tab1">
+<input language="vbscript" button class="btn" onclick="call GoCMD" type="button" value="Command" name="btn_CMD">
+ ---- Open a COMMAND PROMPT WINDOW <br>
+<input language="vbscript" button class="btn" onclick="call GoWMP" type="button" value="Windows Media Player" name="btn_WMP">
+ ---- Open Windows Media Player<br>
+<input language="vbscript" button class="btn" onclick="call GoEVR" type="button" value="Event Viewer" name="btn_EVR">
+ ---- Open Event Viewer<br>
+<input language="vbscript" button class="btn" onclick="call GoCMG" type="button" value="Computer Management" name="btn_CMG">
+ ---- Open Computer Management<br>
+<input language="vbscript" button class="btn" onclick="call GoCMP" type="button" value="TeamViewer" name="btn_CMP">
+ ---- Open TeamViewer<br>
+<input language="vbscript" button class="btn" onclick="call GoTRB" type="button" value="Control Panel" name="btn_TRB">
+ ---- Open Control Panel<br>
+<input language="vbscript" button class="btn" onclick="call GoPWS" type="button" value="Power Shell ISE" name="btn_PWS">
+ ---- Open Power Shell ISE<br>
+<input language="vbscript" button class="btn" onclick="call EditMe" type="button" value="Edit this Page" name="btn_EDM">
+ ---- EDIT This HTML Page <br>
+				
+	</div>
+				
+	<div id="tab2">
+		<p>This area is dedicated to providing technical details about the app.  Provide the mechanics of how the app works.  Generally speaking, if you are making changes to a user's computer, it's best to detail those changes in a completely transparent manner.</p>
+
+		<p>Include more details than what would appear on the "Overview" tab and be free to use more technical language in the process.</p>
+
+	</div>
+				
+	<div id="tab3">
+
+		<p>This area is dedicated to having a set of frequently asked questions that a common user may ask.</p>
+
+		<p>
+			<strong>Q:</strong> Question 1<br />
+			<strong>A:</strong> Answer 1
+		</p>
+					
+		<p>
+			<strong>Q:</strong> Question 2<br />
+			<strong>A:</strong> Answer 2
+		</p>
+					
+		<p>
+			<strong>Q:</strong> Question 3<br />
+			<strong>A:</strong> Answer 3
+		</p>
+	</div>
+				
+	<div id="tab4">
+		<strong>Terms</strong>
+				
+		<p>This area is for various terms and conditions.  A standard set of terms come with each app.
+	</div>
+				
+	<div style="clear: both;"></div>
+									
+</div><!--End Page-->
+
+</body>
+</html> 
+
